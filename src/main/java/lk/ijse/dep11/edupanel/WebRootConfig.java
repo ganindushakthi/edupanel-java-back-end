@@ -18,7 +18,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 @Configuration
-@PropertySource("classpath:/application.properties")
+
 public class WebRootConfig {}
 
 

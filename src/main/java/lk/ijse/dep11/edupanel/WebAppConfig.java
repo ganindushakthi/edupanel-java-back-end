@@ -11,6 +11,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
@@ -23,6 +24,7 @@ import java.io.InputStream;
 @ComponentScan
 @Configuration
 @EnableWebMvc
+@PropertySource("classpath:/application.properties")
 public class WebAppConfig {
 //    @Bean
 //    public CommonsMultipartResolver multipartResolver(){
